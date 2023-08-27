@@ -1,4 +1,4 @@
 
 let planetName= 'Земля';
-let userName =   'Julia';
+let userName =   'Alex';
  console.log(planetName);
