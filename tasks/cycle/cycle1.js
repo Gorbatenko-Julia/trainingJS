@@ -31,21 +31,20 @@ Sample Output 3:
 
 
 function testCycle(a, b) {
-    let x = "";
-    
-    if (a >= b) { //условие если а больше или равно б
-        for (;b <= a; b++){ //инициализация условие изменение
-            x = x + b + " "; // тело цикла 
-       }
-    }
-    
-    
-
-     if (a < b) { //условие если а меньше или равно б 
-        for (;a <= b; a++) {//инициальзация условие изменение
-           x = x + a + " "; // тело цикла 
-       }
-     }
-    
-   return x;
-}
+  let x = "", min, max;
+  
+  if (a >= b) { // проверка на max
+    min = b;
+    max = a;
+  } else {
+    min = a;
+    max = b;
+  }
+  
+  while (min <= max) {
+    x = x + min + ' ';
+    min++; 
+  }
+  
+  return x;
+  }
