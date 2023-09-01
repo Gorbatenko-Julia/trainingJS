@@ -24,8 +24,8 @@ Sample Output 2:
 */
 
 function testCycle(n) {
-    let x=n,a=2;
-    for (; a<=n-2; a=a+2){
+    let x=n;
+    for (a=2; a<=n-2; a=a+2){
    x=x*(n-a);
 
     }
